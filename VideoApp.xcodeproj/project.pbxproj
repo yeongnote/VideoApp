@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46A7DD752B624E3F00DC00DF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7DD742B624E3F00DC00DF /* VideoCell.swift */; };
+		46A7DD782B6278D300DC00DF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 46A7DD772B6278D300DC00DF /* SnapKit */; };
 		46C0BD502B61143700BE87A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD4F2B61143700BE87A3 /* AppDelegate.swift */; };
 		46C0BD522B61143700BE87A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD512B61143700BE87A3 /* SceneDelegate.swift */; };
 		46C0BD5A2B61143700BE87A3 /* VideoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD582B61143700BE87A3 /* VideoApp.xcdatamodeld */; };
@@ -20,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46A7DD742B624E3F00DC00DF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		46C0BD4C2B61143700BE87A3 /* VideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C0BD4F2B61143700BE87A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C0BD512B61143700BE87A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A7DD782B6278D300DC00DF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,7 @@
 			children = (
 				46C0BD6C2B6114FF00BE87A3 /* VideoListView.swift */,
 				46C0BD6E2B61151100BE87A3 /* VideoDetailView.swift */,
+				46A7DD742B624E3F00DC00DF /* VideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +124,9 @@
 			dependencies = (
 			);
 			name = VideoApp;
+			packageProductDependencies = (
+				46A7DD772B6278D300DC00DF /* SnapKit */,
+			);
 			productName = VideoApp;
 			productReference = 46C0BD4C2B61143700BE87A3 /* VideoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 46C0BD432B61143700BE87A3;
+			packageReferences = (
+				46A7DD762B6278D300DC00DF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 46C0BD4D2B61143700BE87A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,6 +186,7 @@
 			files = (
 				46C0BD732B61153B00BE87A3 /* VideoDetailViewModel.swift in Sources */,
 				46C0BD6F2B61151100BE87A3 /* VideoDetailView.swift in Sources */,
+				46A7DD752B624E3F00DC00DF /* VideoCell.swift in Sources */,
 				46C0BD712B61152400BE87A3 /* VideoListViewModel.swift in Sources */,
 				46C0BD5A2B61143700BE87A3 /* VideoApp.xcdatamodeld in Sources */,
 				46C0BD6D2B6114FF00BE87A3 /* VideoListView.swift in Sources */,
@@ -393,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46A7DD762B6278D300DC00DF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46A7DD772B6278D300DC00DF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A7DD762B6278D300DC00DF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		46C0BD582B61143700BE87A3 /* VideoApp.xcdatamodeld */ = {

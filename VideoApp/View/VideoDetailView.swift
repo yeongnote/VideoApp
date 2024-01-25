@@ -7,7 +7,7 @@ class VideoDetailView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        playVideo()
     }
     
     func playVideo() {
@@ -21,3 +21,5 @@ class VideoDetailView: UIViewController {
         }
     }
 }
+
+

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46A7DD752B624E3F00DC00DF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7DD742B624E3F00DC00DF /* VideoCell.swift */; };
 		46A7DD782B6278D300DC00DF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 46A7DD772B6278D300DC00DF /* SnapKit */; };
+		46A7DD7A2B639FDF00DC00DF /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7DD792B639FDF00DC00DF /* extension.swift */; };
 		46C0BD502B61143700BE87A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD4F2B61143700BE87A3 /* AppDelegate.swift */; };
 		46C0BD522B61143700BE87A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD512B61143700BE87A3 /* SceneDelegate.swift */; };
 		46C0BD5A2B61143700BE87A3 /* VideoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C0BD582B61143700BE87A3 /* VideoApp.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		46A7DD742B624E3F00DC00DF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		46A7DD792B639FDF00DC00DF /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		46C0BD4C2B61143700BE87A3 /* VideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C0BD4F2B61143700BE87A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C0BD512B61143700BE87A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		46C0BD4E2B61143700BE87A3 /* VideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				46A7DD792B639FDF00DC00DF /* extension.swift */,
 				46C0BD682B61146400BE87A3 /* Model */,
 				46C0BD672B61146300BE87A3 /* View */,
 				46C0BD662B61145F00BE87A3 /* ViewModel */,
@@ -187,6 +190,7 @@
 				46C0BD732B61153B00BE87A3 /* VideoDetailViewModel.swift in Sources */,
 				46C0BD6F2B61151100BE87A3 /* VideoDetailView.swift in Sources */,
 				46A7DD752B624E3F00DC00DF /* VideoCell.swift in Sources */,
+				46A7DD7A2B639FDF00DC00DF /* extension.swift in Sources */,
 				46C0BD712B61152400BE87A3 /* VideoListViewModel.swift in Sources */,
 				46C0BD5A2B61143700BE87A3 /* VideoApp.xcdatamodeld in Sources */,
 				46C0BD6D2B6114FF00BE87A3 /* VideoListView.swift in Sources */,

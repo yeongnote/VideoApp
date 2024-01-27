@@ -1,6 +1,5 @@
 import Foundation
 
-
 struct VideoInfo: Codable {
     var id: String
     var title: String

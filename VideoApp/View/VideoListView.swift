@@ -4,7 +4,11 @@ import SnapKit
 
 class VideoListView: UIViewController {
     var viewModel: VideoListViewModel = VideoListViewModel()
-    var tableView: UITableView = UITableView()
+    var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.rowHeight = 100
+        return tableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +35,13 @@ extension VideoListView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as? VideoCell else {
+            return UITableViewCell()
+        }
         let video = viewModel.videos[indexPath.row]
         cell.configure(with: video)
+        
+        
         return cell
     }
     
@@ -43,7 +51,8 @@ extension VideoListView: UITableViewDelegate, UITableViewDataSource {
         let detailViewModel = VideoDetailViewModel(video: video)
         let detailView = VideoDetailView()
         detailView.viewModel = detailViewModel
-        navigationController?.pushViewController(detailView, animated: true)
+        detailView.modalPresentationStyle = .pageSheet
+        self.present(detailView, animated: true, completion: nil)
     }
     
 }
@@ -59,3 +68,5 @@ extension VideoListView {
 #Preview {
     VideoListView()
 }
+
+
